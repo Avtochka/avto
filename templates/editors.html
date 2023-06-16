@@ -1,0 +1,38 @@
+{% extends 'template.html' %}
+{% block template %}
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <h1 class="text-center">Blog Upload</h1>
+            <form method = "get" action="/">
+            <div class="mb-3">
+                <label for="image" class="form-label">Image</label>
+                <input type="file" class="form-control" id="image" accept="image/*">
+            </div>
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="Enter the title" required>
+            </div>
+            <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <select class="form-select" id="category" required>
+                <option value="">Select a category</option>
+                <option value="category1">Technologies</option>
+                <option value="category2">Literature</option>
+                <option value="category3">Art</option>
+                <option value="category4">Fashion</option>
+                <option value="category5">Politics</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">Content</label>
+                <textarea class="form-control" id="content" rows="6" placeholder="Write your content here"></textarea>
+              </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+{%endblock%}

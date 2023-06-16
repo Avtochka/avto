@@ -1,0 +1,19 @@
+{% extends 'template.html' %}
+{% block template %}
+    <h1 class="main_title">Suggested Blogs</h1>
+    <div class="articles">
+        {%for i in range(0,12)%}
+        <a href="#">
+            <div class="article">
+                <img src="../static/test.webp">
+                <div class="title">Paris</div>
+                <div class="text">test r3r3wt34t34t3232t32t32r32t32tfwagwqt3qr2323t32t23r32</div>
+                <div class="desc">author 18:45</div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+
+
+
+{%endblock%}
